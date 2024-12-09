@@ -1,0 +1,14 @@
+﻿1. I chose to implement the abstract factory pattern.
+
+2. This project aims to demonstrate how abstract factories can be created dynamically to create different categories of similar objects
+
+3. Since I added further methods down the line of inheritance, I couldn’t access them when treating each of the objects (animals in this
+   case) as abstract parents. I wanted to call AbstractBear.Hiberbate(); for “bear” type AbstractAnimals, but the compiler would not allow
+   me to do so in a way that I’m familiar with (probably not very OOP anyway).
+   It seems like the less concretely you refer to objects, the more annoying it is to create and use them as intended.
+
+4. I originally planned this project as a simple enemy spawner that would spawn different typed enemies based on level, biome, element type,
+   etc., but then I discovered how Actions and Funcs work and fell down a rabbit hole playing with static Dictionary<Action, string> EffectTable
+   and realized my project was not going the direction I needed it to go for this class.
+   I think it’s handy to have the ability to dynamically switch out factories when similar tasks need to be done in slightly different ways. I 
+   can see this being used to create web pages for android, windows, or mac dynamically within the same project.
